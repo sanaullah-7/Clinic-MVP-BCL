@@ -24,7 +24,7 @@ export function HeroSection() {
         </p>
 
         <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-          <Link to={ROUTES.auth.register}>
+          <Link to={ROUTES.demo.book}>
             <Button
               variant="primary"
               size="lg"

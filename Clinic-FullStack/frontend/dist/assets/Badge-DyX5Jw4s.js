@@ -1,0 +1,2 @@
+import{j as i,d as s}from"./index-KCxaq76u.js";const a={default:"bg-accent-light text-text-primary",primary:"bg-primary text-white",success:"bg-success-light text-success",warning:"bg-warning-light text-text-primary",error:"bg-error-light text-error",info:"bg-secondary-light text-text-primary"};function x({children:t,variant:e="default",className:r}){return i.jsx("span",{className:s("inline-flex items-center rounded-full px-2.5 py-0.5 text-caption font-medium",a[e],r),children:t})}export{x as B};
+//# sourceMappingURL=Badge-DyX5Jw4s.js.map

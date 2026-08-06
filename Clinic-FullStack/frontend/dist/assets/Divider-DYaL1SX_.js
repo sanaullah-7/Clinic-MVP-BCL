@@ -1,2 +1,0 @@
-import{g as e,d as a}from"./index-BiTh2Wl5.js";function o({className:r,label:t}){return t?e.createElement("div",{className:a("relative flex items-center",r)},e.createElement("div",{className:"flex-grow border-t border-border"}),e.createElement("span",{className:"mx-4 shrink-0 text-body-sm text-text-muted"},t),e.createElement("div",{className:"flex-grow border-t border-border"})):e.createElement("hr",{className:a("border-0 border-t border-border",r)})}export{o as D};
-//# sourceMappingURL=Divider-DYaL1SX_.js.map

@@ -24,7 +24,7 @@ const FOOTER_COMPANY = [
 ];
 
 const FOOTER_CONTACT = [
-  { label: 'Book a Demo', to: ROUTES.auth.register },
+  { label: 'Book a Demo', to: ROUTES.demo.book },
   { label: 'Contact Us', to: ROUTES.landing.contact },
   { label: 'Support Request', to: ROUTES.landing.support },
 ];
@@ -155,7 +155,7 @@ export function MarketingHeader() {
           </nav>
 
           <div className="hidden lg:flex">
-            <Link to={ROUTES.auth.register}>
+            <Link to={ROUTES.demo.book}>
               <Button variant="primary" size="md" pill className="min-w-[132px] px-5 font-semibold shadow-orange">
                 Book a Demo
               </Button>
@@ -198,7 +198,7 @@ export function MarketingHeader() {
                   </Link>
                 ),
               )}
-              <Link to={ROUTES.auth.register} onClick={closeMobile} className="mt-4">
+              <Link to={ROUTES.demo.book} onClick={closeMobile} className="mt-4">
                 <Button variant="primary" fullWidth pill>
                   Book a Demo
                 </Button>

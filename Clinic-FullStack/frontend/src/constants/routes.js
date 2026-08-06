@@ -37,6 +37,11 @@ const ROUTES = {
     register: "/register",
     forgotPassword: "/forgot-password"
   },
+  demo: {
+    book: "/registers",
+    confirmation: "/form-confirmation/demo-request",
+    highlightVideo: "https://www.youtube.com/watch?v=ysz5S6PUM-U"
+  },
   dashboard: {
     home: "/dashboard",
     designSystem: "/design-system",

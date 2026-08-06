@@ -106,7 +106,7 @@ export function ContactPage() {
                 <InfoBlock
                   title="Book a demo"
                   action={
-                    <Link to={ROUTES.auth.register} aria-label="Book a demo">
+                    <Link to={ROUTES.demo.book} aria-label="Book a demo">
                       <ArrowRight className="h-4 w-4 text-[#1a1a1a]" />
                     </Link>
                   }

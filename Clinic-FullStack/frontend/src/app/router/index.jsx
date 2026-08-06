@@ -95,6 +95,16 @@ const ContactPage = lazy(() =>
     default: m.ContactPage,
   })),
 );
+const BookDemoPage = lazy(() =>
+  import('@/modules/landing/pages/BookDemoPage').then((m) => ({
+    default: m.BookDemoPage,
+  })),
+);
+const DemoConfirmationPage = lazy(() =>
+  import('@/modules/landing/pages/DemoConfirmationPage').then((m) => ({
+    default: m.DemoConfirmationPage,
+  })),
+);
 const DisciplinesPage = lazy(() =>
   import('@/modules/landing/pages/DisciplinesPage').then((m) => ({
     default: m.DisciplinesPage,
@@ -202,6 +212,8 @@ export function AppRouter() {
           <Route path={ROUTES.landing.roleAdmin} element={<AdministratorPage />} />
           <Route path={ROUTES.landing.rolePractitioner} element={<PractitionerPage />} />
           <Route path={ROUTES.landing.contact} element={<ContactPage />} />
+          <Route path={ROUTES.demo.book} element={<BookDemoPage />} />
+          <Route path={ROUTES.demo.confirmation} element={<DemoConfirmationPage />} />
           {COMING_SOON_PATHS.map((path) => (
             <Route key={path} path={path} element={<ComingSoonPage />} />
           ))}

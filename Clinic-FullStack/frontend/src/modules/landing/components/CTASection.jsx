@@ -15,7 +15,7 @@ export function CTASection() {
           unrivaled flexibility and customization using our all-in-one clinic software and EMR.
         </p>
         <Link
-          to={ROUTES.auth.register}
+          to={ROUTES.demo.book}
           className="inline-flex min-w-[200px] items-center justify-center rounded-lg bg-white px-10 py-3.5 text-base font-semibold text-primary shadow-md transition-colors hover:bg-white/95"
         >
           Book a Demo
