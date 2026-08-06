@@ -1,0 +1,41 @@
+:root {
+  --brand-soft-pink: #f7c7c8;
+  --brand-baby-blue: #bfeffd;
+  --brand-orange: #f7803c;
+  --brand-nav-dark: #1a1a1a;
+  --brand-accent-blue: #48b2e0;
+
+  --brand-primary: #f7803c;
+  --brand-secondary: #bfeffd;
+  --brand-accent: #f7c7c8;
+
+  --text-primary: #111111;
+  --text-secondary: #333333;
+  --text-muted: #666666;
+  --text-inverse: #ffffff;
+
+  --surface-default: #ffffff;
+  --surface-card: #ffffff;
+  --surface-dark: #1a1a1a;
+
+  --border-default: #e8e8e8;
+  --border-strong: #d0d0d0;
+
+  --shadow-brand: 0 8px 32px rgba(247, 128, 60, 0.22);
+  --shadow-card: 0 12px 48px rgba(0, 0, 0, 0.08);
+  --shadow-laptop: 0 24px 64px rgba(0, 0, 0, 0.14);
+
+  /* Outlier.ai — soft pink → white → baby blue mesh */
+  --gradient-hero: linear-gradient(
+    115deg,
+    #f7c7c8 0%,
+    #fdeeee 18%,
+    #ffffff 46%,
+    #eef9fd 74%,
+    #bfeffd 100%
+  );
+  --gradient-soft: linear-gradient(90deg, #f7c7c8 0%, #ffffff 50%, #bfeffd 100%);
+  --gradient-section: linear-gradient(180deg, rgba(247, 199, 200, 0.22) 0%, rgba(191, 239, 253, 0.18) 100%);
+  --gradient-brand: linear-gradient(135deg, #f7803c 0%, #ff9a5c 100%);
+  --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}

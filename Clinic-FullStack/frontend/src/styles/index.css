@@ -1,0 +1,170 @@
+@import './tokens.css';
+
+@config "../../tailwind.config.cjs";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'DM Sans', sans-serif;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    color: var(--text-muted);
+  }
+
+  a {
+    font-family: inherit;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  *:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--brand-orange);
+  }
+
+  ::selection {
+    background-color: var(--brand-baby-blue);
+    color: var(--text-primary);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .bg-gradient-section {
+    background: var(--gradient-section);
+  }
+
+  .bg-gradient-brand {
+    background-color: #f7803c;
+    background-image: linear-gradient(135deg, #f7803c 0%, #ff9a5c 100%);
+    color: #ffffff;
+  }
+
+  .bg-gradient-dark {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffffff;
+  }
+
+  .glass-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-card);
+  }
+
+  .hero-accent {
+    font-family: Caveat, cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.08em;
+    color: var(--brand-accent-blue);
+    letter-spacing: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.section-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-inner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.35s ease-out;
+}
